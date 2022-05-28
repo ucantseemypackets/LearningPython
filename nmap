@@ -1,0 +1,27 @@
+┌──(rleonard㉿e933e617bcf1)-[/]
+└─$ sudo nmap --script=firewalk 192.168.1.1
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-08 02:02 UTC
+Nmap scan report for 192.168.1.1
+Host is up (0.0060s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 17.73 seconds
+
+┌──(rleonard㉿e933e617bcf1)-[/]
+└─$ history
+    1  nmap
+    2  sudo nmap -sS 192.168.1.1
+    3  nmap -f 192.168.1.1
+    4  sudo nmap -f 192.168.1.1
+    5  sudo nmap 192.168.1.1 -mtu 128
+    6  nmap -D RND:25 192.168.1.1
+    7  sudo nmap -D RND:25 192.168.1.1
+    8  nmap --script==firewalk 192.168.1.1
+    9  sudo nmap --script==firewalk 192.168.1.1
+   10  sudo nmap --script=firewalk 192.168.1.1
+   11  history

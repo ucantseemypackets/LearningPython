@@ -1,0 +1,6 @@
+
+# protect wpconfig.php
+<files wp-config.php&gt;
+order allow,deny
+deny from all
+</files&gt;

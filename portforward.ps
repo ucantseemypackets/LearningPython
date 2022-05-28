@@ -1,0 +1,6 @@
+New-VMSwitch -SwitchName "NATSwitch" -SwitchType Internal
+New-NetIPAddress -IPAddress 172.1.0.1 -PrefixLength 24 -InterfaceAlias "vEthernet (NATSwitch)"
+New-NetNAT -Name "mongoleo" -InternalIPInterfaceAddressPrefix 172.1.0.1
+
+
+ Add-NetNatStaticMapping  -ExternalPort 11897 -InternalIPAddress "172.1.0.2" -InternalPort 11897
