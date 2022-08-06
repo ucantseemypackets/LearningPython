@@ -1,4 +1,0 @@
-#enable ssh-agent
-eval "$(ssh-agent -s)" 
-#add ssh private key to agent
-ssh-add {private key location}
