@@ -1,6 +1,3 @@
-#Author Tom Weil
-#Security Vitals
-# 
 #!/bin/bash
 if [ ! $1 ]; then
         echo " Example of use: $0 database_name [dir_to_store]"
