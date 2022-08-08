@@ -1,0 +1,1 @@
+print('_ ' + monkeyisland.getCollectionNames())
